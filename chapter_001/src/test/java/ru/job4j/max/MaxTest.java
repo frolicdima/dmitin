@@ -21,7 +21,7 @@ public class MaxTest {
 	  * @Test add
 	  */
 	 @Test
-    public void whenMaxFirstLargerSecondThenFirst() { //первое больше второго
+    public void whenMaxFirstLargerSecondThenFirst() { //первое число больше второго
     Max maximum = new Max(); //создаем объект maximum класса Max
     int result = maximum.max(100, 1); //в переменную result записываем наибольшее из двух заранее введенных руками чисел
 	//умышленно делаем first больше second, чтобы пройти тест
