@@ -28,4 +28,15 @@ public class MaxTest {
     int expected = 100; //говорим, что должно быть 100
     assertThat(result, is(expected)); //сравниваем "что должно быть" и результат работы программы Max.java
     }
+
+	/**
+	  * @Test for maxofthree method
+	  */
+	 @Test
+	public void whenMaxFirstIsTheLargestThenFirst() {
+		Max maximum = new Max();
+		int result = maximum.maxofthree(10, 5, 1);
+		int expected = 10;
+		assertThat(result, is(expected));
+	}
 }

@@ -18,4 +18,16 @@ package ru.job4j.max;
 	 public int max(int first, int second) {
 		 return (first >= second) ? first : second;
 	 }
+
+	 /**
+	   * max of three numbers using "max" method.
+	   * @param first - first arg,
+	   * @param second - second arg,
+	   * @param third - third arg.
+	   * @return - max of (tempmax, third), maxofthree in fact.
+	   */
+	 public int maxofthree(int first, int second, int third) {
+		int tempmax = max(first, second);
+		return (max(tempmax, third));
+	 }
  }
