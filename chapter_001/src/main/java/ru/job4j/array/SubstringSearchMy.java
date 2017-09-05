@@ -15,7 +15,7 @@ public class SubstringSearchMy {
 	  * check if "origin" substring contains "sub".
 	  * @param origin - original string,
 	  * @param sub - substring to be checked,
-	  * @return returns turned array.
+	  * @return returns "true" if "origin" contains "sub", else "false".
 	  */
 	static boolean contains(String origin, String sub) {
 		//splitting String to array of Strings, each element represents one character
