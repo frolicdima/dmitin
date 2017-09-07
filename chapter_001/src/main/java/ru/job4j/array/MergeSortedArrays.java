@@ -31,7 +31,12 @@ public class MergeSortedArrays {
                 k++;
             }
         }
-        while (i < first.length) {
+		if (i < first.length) {
+            System.arraycopy(first, i, merged, k, first.length - i);
+        } else {
+            System.arraycopy(second, j, merged, k, second.length - j);
+        }
+        /*while (i < first.length) {
             merged[k] = first[i];
             i++;
             k++;
@@ -40,7 +45,7 @@ public class MergeSortedArrays {
             merged[k] = second[j];
             j++;
             k++;
-        }
+        }*/
         return merged;
     }
 }
